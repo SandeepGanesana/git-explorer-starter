@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
+
 const Users = () => {
   //State management
   const [gitUsers, setGitUsers] = useState([]);
@@ -27,7 +29,9 @@ const Users = () => {
               className="user-avatar"
             />
             <span className="username">{user.login}</span>
-            <button className="view-btn">View User</button>
+            <Link to={user.login}>
+              <button className="view-btn">View User</button>
+            </Link>
           </div>
         ))}
       </div>
