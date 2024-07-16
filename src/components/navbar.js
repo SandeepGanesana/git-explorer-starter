@@ -17,6 +17,9 @@ const Navbar = () => {
           <Link to={'/users'}>
             Users
           </Link>
+          <Link to={'/searchuser'}>
+            Search User
+          </Link>
         </div>
       </nav>
       <Outlet />

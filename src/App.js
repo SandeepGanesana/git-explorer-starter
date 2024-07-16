@@ -7,6 +7,8 @@ import Home from "./components/home";
 import AboutUs from "./components/about";
 import Users from "./components/users";
 import UserProfile from "./components/userProfile";
+import RepoDetail from "./components/repoDetail";
+import SearchUser from "./components/searchUser";
 
 const NotFound = () => {
   return (<>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/users" element={<Users />} />
           <Route path="/users/:username" element={<UserProfile />} />
+          <Route path="/repo/:username/:name" element={<RepoDetail />} />
+          <Route path="/searchuser" element={<SearchUser />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -35,7 +35,7 @@ const RepoList = () => {
             </div>
 
             <button>
-              <button>View Repo</button>
+              <button><Link to={`/repo/${repo.owner.login}/${repo.name}`}>View Repo</Link></button>
             </button>
           </div>
         ))
